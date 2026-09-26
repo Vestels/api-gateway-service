@@ -11,10 +11,10 @@ public class ApiGatewayConfig {
     @Bean
     public RouteLocator routes(RouteLocatorBuilder builder) {
         return builder.routes()
-                .route("user-service", route -> route
+                .route("synex-user-service", route -> route
                         .path("/api/v1/users/**")
                         .filters(filter -> filter.stripPrefix(2))
-                        .uri("lb://user-service"))
+                        .uri("lb://synex-user-service"))
                 .build();
     }
 }
