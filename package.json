@@ -1,5 +1,5 @@
 {
-  "name": "api-gateway-service",
+  "name": "synex-api-gateway-service",
   "version": "0.1.1",
   "private": true,
   "scripts": {
